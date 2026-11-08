@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GelatineSculpt® — Liquid Botanical Drops for Natural Weight Support</title>
+	<meta name="keywords" content="Gelatine Sculpt, Gelatine Sculpt Buy, Gelatine Sculpt Order ,Order Gelatine Sculpt>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Clinical, Calming Colors */
+            --primary: #0F766E; /* Deep Teal */
+            --primary-hover: #115E59;
+            --accent: #0369A1; /* Calming Blue */
+            --bg-main: #F8FAFC; /* Off-white */
+            --bg-white: #FFFFFF;
+            --bg-alt: #F1F5F9;
+            --text-dark: #1E293B;
+            --text-light: #475569;
+            --text-muted: #64748B;
+            --border-color: #E2E8F0;
+            --success: #16A34A;
+            
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+        
+        .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+        /* Typography */
+        h1, h2, h3, h4 { color: var(--text-dark); font-weight: 700; line-height: 1.2; margin-bottom: 1rem; }
+        h1 { font-size: 2.5rem; letter-spacing: -0.02em; }
+        h2 { font-size: 2rem; }
+        h3 { font-size: 1.5rem; }
+        p { color: var(--text-light); margin-bottom: 1rem; }
+        .section-label {
+            color: var(--accent); font-weight: 600; font-size: 0.875rem; text-transform: uppercase;
+            letter-spacing: 0.05em; margin-bottom: 0.5rem; display: block;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 0.75rem 1.5rem; font-weight: 600; border-radius: var(--radius-md);
+            transition: all 0.2s ease; cursor: pointer; text-align: center; border: 2px solid transparent;
+        }
+        .btn-primary { background-color: var(--primary); color: var(--bg-white); box-shadow: var(--shadow-md); }
+        .btn-primary:hover { background-color: var(--primary-hover); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+        .btn-outline { background-color: transparent; color: var(--primary); border-color: var(--primary); }
+        .btn-outline:hover { background-color: var(--bg-alt); }
+        .btn-full { width: 100%; }
+
+        /* Layout Grids */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+        
+        @media (max-width: 992px) {
+            .grid-4 { grid-template-columns: repeat(2, 1fr); }
+            .grid-3 { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.75rem; }
+        }
+
+        /* Header */
+        header { background-color: var(--bg-white); box-shadow: var(--shadow-sm); position: sticky; top: 0; z-index: 50; padding: 1rem 0; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); letter-spacing: -0.02em; }
+        .nav-links { display: flex; gap: 1.25rem; align-items: center; }
+        .nav-links a { font-size: 0.9rem; font-weight: 500; color: var(--text-dark); transition: color 0.2s; }
+        .nav-links a:hover { color: var(--primary); }
+        .nav-disclaimer { font-size: 0.75rem; color: var(--text-muted); font-style: italic; }
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-dark); }
+        
+        @media (max-width: 992px) {
+            .nav-links {
+                display: none; position: absolute; top: 100%; left: 0; right: 0;
+                background: var(--bg-white); flex-direction: column; padding: 1rem; box-shadow: var(--shadow-md);
+            }
+            .nav-links.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+            .nav-disclaimer { display: none; }
+        }
+
+        /* Sections */
+        section { padding: 5rem 0; }
+        .section-alt { background-color: var(--bg-white); }
+        
+        /* Hero */
+        .hero { background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-main) 100%); padding: 6rem 0; }
+        .badge-text { display: inline-block; background: var(--bg-white); color: var(--accent); font-size: 0.75rem; font-weight: 700; padding: 0.5rem 1rem; border-radius: 2rem; margin-bottom: 1.5rem; border: 1px solid var(--border-color); letter-spacing: 0.05em; }
+        .hero-disclaimer { font-size: 0.75rem; color: var(--text-muted); margin-top: 1.5rem; font-style: italic; }
+        .hero-image-placeholder { background-color: var(--border-color); border-radius: var(--radius-lg); height: 100%; min-height: 400px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); overflow: hidden;}
+        .format-callout { background-color: #E0F2FE; color: #0369A1; font-weight: 600; padding: 0.75rem; border-radius: var(--radius-md); font-size: 0.9rem; margin-bottom: 1rem; display: inline-block;}
+
+        /* Cards */
+        .card { background: var(--bg-white); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem; transition: transform 0.2s, box-shadow 0.2s; }
+        .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+        .card-number { font-size: 2.5rem; font-weight: 800; color: var(--bg-alt); margin-bottom: 1rem; line-height: 1; }
+        .disclaimer-label { display: inline-block; background: #FEF3C7; color: #92400E; font-size: 0.7rem; font-weight: 600; padding: 0.25rem 0.5rem; border-radius: 4px; margin-top: 1rem; text-transform: uppercase; }
+
+        /* Review Cards */
+        .review-card { background: var(--bg-white); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem; display: flex; flex-direction: column;}
+        .review-header { display: flex; align-items: center; margin-bottom: 1rem; }
+        .reviewer-info { margin-left: 1rem; }
+        .reviewer-name { font-weight: 700; color: var(--text-dark); }
+        .reviewer-meta { font-size: 0.8rem; color: var(--text-muted); }
+        .review-text { font-style: italic; color: var(--text-light); flex-grow: 1; margin-bottom: 1.5rem;}
+        .stars { color: #F59E0B; font-size: 1.2rem; }
+
+        /* Pricing */
+        .pricing-card { display: flex; flex-direction: column; height: 100%; text-align: center; }
+        .pricing-highlight { border: 2px solid var(--primary); transform: scale(1.05); }
+        @media (max-width: 768px) { .pricing-highlight { transform: scale(1); } }
+        .pricing-badge { background: var(--primary); color: white; padding: 0.25rem 1rem; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; border-radius: 0 0 var(--radius-md) var(--radius-md); display: inline-block; margin: -2rem auto 1rem; }
+        .price-display { font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin: 1.5rem 0; }
+        .pricing-features { text-align: left; margin-bottom: 2rem; flex-grow: 1; }
+        .pricing-features li { margin-bottom: 0.5rem; font-size: 0.9rem; display: flex; align-items: start; }
+        .pricing-features li::before { content: "✓"; color: var(--success); margin-right: 0.5rem; font-weight: bold; }
+        .guarantee-note { font-size: 0.8rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem; display: block; }
+        
+        /* Table */
+        .table-responsive { overflow-x: auto; margin-top: 2rem; }
+        table { width: 100%; border-collapse: collapse; background: var(--bg-white); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm); }
+        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+        th { background: var(--bg-alt); font-weight: 600; color: var(--text-dark); }
+        td { color: var(--text-light); font-size: 0.9rem; }
+        .table-disclaimer { font-size: 0.8rem; color: var(--text-muted); margin-top: 1rem; font-style: italic; }
+
+        /* FAQ */
+        .accordion-item { border: 1px solid var(--border-color); border-radius: var(--radius-md); margin-bottom: 1rem; background: var(--bg-white); }
+        .accordion-header { width: 100%; text-align: left; padding: 1.25rem; font-size: 1rem; font-weight: 600; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: var(--text-dark); }
+        .accordion-content { padding: 0 1.25rem; max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        .accordion-content p { padding-bottom: 1.25rem; margin: 0; }
+        
+        /* Blocks & Callouts */
+        .callout-box { background-color: #E0F2FE; border-left: 4px solid var(--accent); padding: 1.5rem; margin: 2rem 0; border-radius: 0 var(--radius-md) var(--radius-md) 0; }
+        .callout-box p { color: #0369A1; font-weight: 500; margin: 0; }
+        .mechanism-card { border-left: 4px solid var(--primary); padding-left: 1.5rem; margin-bottom: 2rem; }
+
+        /* Guarantee Box */
+        .guarantee-box { background-color: #F0FDF4; border: 1px solid #BBF7D0; border-radius: var(--radius-lg); padding: 2rem; text-align: center; margin: 3rem auto; max-width: 800px; }
+        .guarantee-box h3 { color: #166534; }
+        .guarantee-box p { color: #15803D; }
+
+        /* Footer */
+        footer { background-color: #1E293B; color: #F8FAFC; padding: 4rem 0 2rem; }
+        footer a { color: #CBD5E1; transition: color 0.2s; }
+        footer a:hover { color: #FFFFFF; }
+        footer h4 { color: #FFFFFF; margin-bottom: 1.5rem; font-size: 1.1rem; }
+        footer p { color: #94A3B8; font-size: 0.9rem; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+        .footer-disclaimer { border-top: 1px solid #334155; padding-top: 2rem; text-align: center; font-size: 0.8rem; color: #94A3B8; }
+        .secure-checkout { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem; background: #0F172A; padding: 0.5rem 1rem; border-radius: var(--radius-md); font-size: 0.85rem; color: #38BDF8; font-weight: 600;}
+        
+        @media (max-width: 992px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 2rem; } }
+
+        /* Banner */
+        .banner { background-color: var(--accent); color: white; text-align: center; padding: 2rem; font-weight: 700; letter-spacing: 0.1em; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">GelatineSculpt</a>
+            <nav class="nav-links">
+                <a href="#benefits">Benefits</a>
+                <a href="#ingredients">Ingredients</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#comparison">Comparison</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#sources">Sources</a>
+                <span class="nav-disclaimer">(illustrative)</span>
+                <a href="order.html" class="btn btn-primary">Order Now</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="hero">
+        <div class="container grid-2">
+            <div>
+                <span class="badge-text">WEIGHT MANAGEMENT • HEALTHY HABITS • DAILY WELLNESS</span>
+                <h1>GelatineSculpt® — Liquid Botanical Drops for Natural Weight Support</h1>
+                <h3>GelatineSculpt liquid botanical dietary supplement for weight management and everyday wellness</h3>
+                
+                <div class="format-callout">
+                    Liquid dropper format | 60 mL bottle | Plant-based botanical blend with chromium
+                </div>
+
+                <p>GelatineSculpt is a liquid botanical dietary supplement marketed toward adults interested in weight management, healthy lifestyle habits and general wellness. It is positioned for people who want to explore supplement options while working toward balanced nutrition and realistic personal health goals.</p>
+                <p>Managing body weight is a personal journey influenced by eating patterns, physical activity, sleep, stress and many individual factors. GelatineSculpt is presented within the weight-management supplement category for adults researching products associated with their everyday wellness routines. Explore the product information and review the current label before making a purchase decision.</p>
+                
+                <div style="margin: 1.5rem 0; display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem; font-weight: 600; color: var(--primary);">
+                    <span>✓ Weight Goals</span>
+                    <span>✓ Daily Wellness</span>
+                    <span>✓ Balanced Nutrition</span>
+                    <span>✓ Active Lifestyle</span>
+                    <span>✓ Liquid Format</span>
+                    <span>✓ No Subscription</span>
+                </div>
+
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="#pricing" class="btn btn-primary">Explore GelatineSculpt</a>
+                    <a href="#ingredients" class="btn btn-outline">View Product Information</a>
+                </div>
+                <p class="hero-disclaimer">*GelatineSculpt is a dietary supplement marketed for weight-management wellness. It is not a medicine or a treatment for obesity or any medical condition. Individual experiences vary.</p>
+            </div>
+            <div>
+                <!-- Image Placeholder for Hero -->
+                <div class="hero-image-placeholder">
+                    <img src="images/gelatinesculpt-hero.webp" alt="GelatineSculpt 60mL Dropper Bottle" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. "Understanding Weight Management" Section -->
+    <section class="section-alt" id="understanding">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+                <span class="section-label">UNDERSTANDING WEIGHT MANAGEMENT</span>
+                <h2>How GelatineSculpt Fits Into a Balanced Weight-Management Routine</h2>
+                <p>GelatineSculpt is marketed toward adults exploring supplements associated with weight-management goals and everyday wellness. Understanding the product begins with checking its current label and recognizing the importance of sustainable lifestyle habits.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-number">01</div>
+                    <h3>Understand Your Weight Goals</h3>
+                    <p>Healthy weight management starts with realistic goals that take individual needs and circumstances into account. GelatineSculpt is presented for adults researching products in the weight-management wellness category. Personal goals are best approached with balanced nutrition, consistent habits and guidance from a qualified professional when appropriate.</p>
+                </div>
+                <div class="card">
+                    <div class="card-number">02</div>
+                    <h3>Build Balanced Daily Habits</h3>
+                    <p>Everyday choices such as meal planning, regular movement, hydration and sufficient sleep can contribute to a more consistent wellness routine. A supplement should be considered only as one part of a broader approach, not as a replacement for healthy habits.</p>
+                </div>
+                <div class="card">
+                    <div class="card-number">03</div>
+                    <h3>Review Product Information</h3>
+                    <p>Before considering GelatineSculpt, review its current ingredient list, serving directions, warnings and other product details. No particular amount of weight loss or specific result should be assumed. Individual experiences and health circumstances differ.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem; color: var(--text-light);">
+                <p>A responsible weight-management approach focuses on realistic goals, balanced meals, regular activity, adequate rest and informed decisions about supplements.</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="banner">WEIGHT GOALS • BALANCE • HEALTHY ROUTINES</div>
+
+    <!-- 3. "Wellness Areas" Section -->
+    <section>
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Wellness Areas Associated With GelatineSculpt</h2>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Healthy Weight-Management Goals</h3>
+                    <p>GelatineSculpt is marketed toward adults interested in weight management and general wellness. Healthy weight goals are personal and can involve nutrition choices, daily movement, sleep quality and other lifestyle factors. A supplement should not be expected to cause automatic or guaranteed weight loss. Progress can vary significantly between individuals.</p>
+                </div>
+                <div class="card">
+                    <h3>Balanced Nutrition and Mindful Eating</h3>
+                    <p>Balanced eating habits are an important part of a sustainable wellness routine. Choosing a variety of nutritious foods and paying attention to individual dietary needs can help support general health. GelatineSculpt is positioned within the weight-management supplement category, but it does not replace a varied diet or individualized nutrition guidance.</p>
+                </div>
+                <div class="card">
+                    <h3>Active Living and Everyday Movement</h3>
+                    <p>Walking, strength activities and other forms of movement can be useful components of an active lifestyle. The right activity routine depends on a person's current fitness, preferences and health circumstances. GelatineSculpt is marketed for adults interested in weight-management wellness. It should not be presented as a substitute for exercise or as a guaranteed fat-burning product.</p>
+                </div>
+                <div class="card">
+                    <h3>Convenient Supplement Research</h3>
+                    <p>When researching GelatineSculpt, look at the ingredient list, serving size, directions, allergen information and product warnings. Reviewing these details helps consumers understand the supplement rather than relying only on broad promotional descriptions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. "What Is GelatineSculpt?" Section -->
+    <section class="section-alt">
+        <div class="container grid-2">
+            <div>
+                <span class="section-label">GET TO KNOW THE PRODUCT</span>
+                <h2>What Is GelatineSculpt? Liquid Botanical Drops for Weight Support</h2>
+                <p style="margin-bottom: 2rem;">GelatineSculpt is a liquid botanical dietary supplement marketed as an herbal weight management aid, sold in a 60 mL dropper bottle designed for daily use. Despite its name, the formula contains no gelatin and no collagen — it is a plant-based extract blend with chromium, positioned alongside the viral "gelatin trick" trend rather than being an actual gelatin product.</p>
+                
+                <h3 style="font-size: 1.25rem;">Product Format and Manufacturing</h3>
+                <p>The product is manufactured in an FDA-registered facility and is sold exclusively through its official website, which the company says allows for tighter quality control and direct customer support. The liquid delivery format is marketed as offering faster absorption than capsules, though evidence for a functional superiority over solid forms remains anecdotal rather than clinically established.</p>
+                
+                <h3 style="font-size: 1.25rem;">Formula Overview: Chromium and Botanical Blend</h3>
+                <p>The formulation centers on two core components: chromium picolinate and a proprietary botanical blend. Published label analyses report chromium at 67 mcg (191% Daily Value) alongside a 700 mg blend of Maca root, green tea extract, guarana seed, Garcinia cambogia, Eleuthero root, grape seed, capsicum, African mango, and Astragalus root. Some independent reviewers have flagged inconsistencies between the label printed on certain bottles and the ingredients promoted on the sales page, so buyers are advised to confirm the exact Supplement Facts panel with the seller before ordering.</p>
+                
+                <h3 style="font-size: 1.25rem;">Understanding the Proprietary Blend</h3>
+                <p>From a manufacturing and transparency standpoint, GelatineSculpt uses a proprietary blend — a common industry practice that discloses total blend weight but not individual extract dosages. Reviewers note that this limits consumers' ability to assess whether each botanical is present at a clinically meaningful level.</p>
+
+                <div class="callout-box">
+                    <p>GelatineSculpt is presented as a liquid botanical weight-management wellness supplement. Review the actual product label, understand its directions and consider your individual health circumstances before making a decision.</p>
+                </div>
+            </div>
+            <div>
+                <div style="background-color: var(--bg-main); padding: 2rem; border-radius: var(--radius-lg); height: 100%;">
+                    <h3 style="font-size: 1.25rem;">Understanding the Product Name and Formula</h3>
+                    <p>The product name refers to gelatin, but multiple independent label reviews confirm that GelatineSculpt contains zero gelatin and zero collagen, despite the product name. The formula is a botanical extract and chromium blend, not a gelatin or collagen supplement. Consumers specifically seeking a gelatin- or collagen-based weight-management product should look for a formula that lists gelatin or hydrolyzed collagen as a primary ingredient. The current Supplement Facts panel is the appropriate place to verify whether gelatin or any other specific ingredient is included, along with its amount and serving information.</p>
+                    <hr style="border: 0; height: 1px; background: var(--border-color); margin: 2rem 0;">
+                    
+                    <h3 style="font-size: 1.25rem;">Who Is GelatineSculpt Marketed Toward?</h3>
+                    <p>GelatineSculpt is marketed toward adults who are interested in weight-management supplements and general wellness. Anyone considering the product should check the current packaging, review the complete ingredient declaration and make sure the available product information is suitable for their individual needs.</p>
+                    <hr style="border: 0; height: 1px; background: var(--border-color); margin: 2rem 0;">
+                    
+                    <h3 style="font-size: 1.25rem;">What Should You Know Before Purchasing?</h3>
+                    <p>Review the complete ingredient declaration, serving size, usage directions, warnings and seller information. Also check package quantities, shipping costs and return conditions. These details help provide a clearer picture of the product and its purchase terms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. "How Does It Work?" Section -->
+    <section id="how-it-works">
+        <div class="container" style="max-width: 900px;">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <span class="section-label">THE SCIENCE BEHIND THE FORMULA</span>
+                <h2>How Does GelatineSculpt Work?</h2>
+                <p>GelatineSculpt is promoted as supporting natural weight management through a multi-pathway approach rather than a single stimulant effect.</p>
+            </div>
+
+            <div class="mechanism-card">
+                <h3>Mechanism 1: GLP-1 and GIP Hormone Pathway Positioning</h3>
+                <p>The brand's consumer materials frame the formula around GLP-1 and GIP hormone stimulation — the same incretin pathways targeted by prescription weight-management medications — arguing that botanical and amino-acid components may encourage the body's own satiety signaling. This positioning is central to the product's appeal as a "natural alternative," though independent reviewers emphasize that a supplement marketed with a similar-sounding mechanism has not met the same clinical evidence standard as prescription drugs.</p>
+            </div>
+
+            <div class="mechanism-card">
+                <h3>Mechanism 2: Thermogenesis and Metabolic Rate Support</h3>
+                <p>Ingredients such as green tea extract, guarana (a natural caffeine source), and capsicum are traditionally included in metabolism-boosting formulas to increase calorie expenditure and fat oxidation. Chromium picolinate is included primarily for its role in supporting normal blood sugar metabolism, which can indirectly influence appetite and energy stability — a relevant factor for anyone pursuing sustainable weight support.</p>
+            </div>
+
+            <div class="mechanism-card">
+                <h3>Mechanism 3: Appetite Modulation and Stress-Related Eating Support</h3>
+                <p>The blend contains adaptogenic botanicals (Eleuthero root, Astragalus, Maca) alongside amino acids sometimes used in mood and craving-related formulations. The brand also markets the liquid format as addressing "stress-driven fat storage" and skin elasticity — claims that are plausible in a wellness context but not independently validated for this specific product.</p>
+            </div>
+
+            <div style="background: var(--bg-alt); padding: 1.5rem; border-radius: var(--radius-md); text-align: center; margin-top: 2rem;">
+                <p style="margin: 0; color: var(--text-dark); font-weight: 500;">Realistically, the formula is best understood as a supportive tool: independent reviewers stress that it cannot override a poor diet or sedentary routine, and that users who see the best outcomes pair the drops with whole foods, regular movement, and adequate sleep.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. "Key Ingredients" Section -->
+    <section class="section-alt" id="ingredients">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+                <span class="section-label">FORMULA TRANSPARENCY MATTERS</span>
+                <h2>GelatineSculpt Key Ingredients and Formula Information</h2>
+                <p>The ingredient strategy in GelatineSculpt is built around metabolic support and appetite regulation rather than aggressive stimulation.</p>
+            </div>
+
+            <div class="grid-2" style="gap: 3rem;">
+                <div>
+                    <div style="background: var(--bg-main); padding: 1.5rem; border-radius: var(--radius-md); margin-bottom: 2rem;">
+                        <h3 style="color: var(--primary); font-size: 1.25rem;">Chromium Picolinate (67 mcg, 191% Daily Value)</h3>
+                        <p style="margin:0;">Chromium picolinate is the only disclosed micronutrient with a quantified amount per serving, and it is included for its recognized role in normal macronutrient metabolism and blood sugar balance — a mineral that may help reduce swings in appetite and energy that derail consistency.</p>
+                    </div>
+
+                    <h3 style="color: var(--primary); font-size: 1.25rem;">Proprietary Botanical Blend (700 mg)</h3>
+                    <p>The surrounding proprietary botanical blend supplies the thermogenic and adaptogenic backbone. Key ingredients include:</p>
+                    <ul style="list-style-type: disc; margin-left: 1.5rem; color: var(--text-light); margin-bottom: 1.5rem;">
+                        <li><strong>Green Tea Extract and Guarana Seed:</strong> Contribute caffeine-related metabolism boost effects.</li>
+                        <li><strong>Garcinia Cambogia and African Mango:</strong> Traditionally used in natural weight loss formulas for appetite and body-composition support.</li>
+                        <li><strong>Maca Root, Eleuthero Root, and Astragalus Root:</strong> Adaptogenic botanicals commonly included to help the body manage everyday stress, which is a frequent trigger for comfort eating and inconsistent routines.</li>
+                        <li><strong>Grape Seed Extract and Capsicum Extract:</strong> Broaden the antioxidant and thermogenic profile.</li>
+                    </ul>
+
+                    <h3 style="color: var(--primary); font-size: 1.25rem;">Amino-Acid-Related Compounds</h3>
+                    <p>The label also lists amino-acid-related compounds (including L-carnitine, L-tyrosine, and GABA in some published panel versions) that are often used in energy and mood-support formulations.</p>
+                </div>
+                <div>
+                    <div class="callout-box" style="margin-top: 0;">
+                        <h3 style="color: var(--accent); font-size: 1.1rem; margin-bottom: 0.5rem;">Important Label Disclosure Note:</h3>
+                        <p style="font-size: 0.9rem;">Some independent reviewers have flagged inconsistencies between the label printed on certain bottles and the ingredients promoted on the sales page — including differences in blend size and the presence of ingredients like turmeric or berberine in marketing materials but not on the verified label. Buyers should request or confirm the current Supplement Facts panel from the seller before purchase.</p>
+                    </div>
+
+                    <h3 style="color: var(--primary); font-size: 1.25rem;">The Practical Takeaway:</h3>
+                    <p>The blend is designed as a daily metabolic tonic — not a rapid fat-burner — and its usefulness depends on consistent use alongside foundational habits.</p>
+
+                    <h3 style="color: var(--primary); font-size: 1.25rem; margin-top: 2rem;">Safety Information and Responsible Use</h3>
+                    <p>GelatineSculpt is marketed as a plant-based liquid supplement manufactured in an FDA-registered facility, and it does not contain artificial additives according to the brand's positioning. Independent reviewers describe the ingredient profile as broadly standard for the botanical weight-support category, with green tea, guarana, and Garcinia being common inclusions in such products. That said, "natural" does not automatically mean risk-free: guarana and green tea extract contain caffeine, and anyone sensitive to stimulants, managing a medical condition, pregnant, nursing, or under 18 should consult a healthcare provider before use.</p>
+
+                    <div style="background: var(--bg-white); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: var(--radius-md); margin-top: 2rem;">
+                        <p style="margin: 0; font-size: 0.75rem; color: var(--text-muted);">Dietary supplements are not substitutes for medical diagnosis or treatment. GelatineSculpt is not intended to diagnose, treat, cure or prevent any disease or medical condition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. "Benefits" Section -->
+    <section id="benefits">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+                <span class="section-label">WHAT THE FORMULA IS DESIGNED TO SUPPORT</span>
+                <h2>Benefits of GelatineSculpt</h2>
+                <p>Based on the product's ingredient profile and marketing positioning, the following benefits are associated with GelatineSculpt. These are not guaranteed outcomes and individual experiences vary.</p>
+            </div>
+
+            <div class="grid-2">
+                <ul class="pricing-features" style="margin-bottom: 0;">
+                    <li><strong>Supports daily metabolic function</strong> through chromium and botanical thermogens.</li>
+                    <li><strong>Liquid dropper format</strong> offers a convenient alternative to capsules for those who dislike pills.</li>
+                    <li><strong>Plant-based botanical blend</strong> with familiar weight-support ingredients such as green tea and Garcinia.</li>
+                    <li><strong>Chromium included</strong> for blood sugar balance support, which can help stabilize appetite and energy.</li>
+                    <li><strong>Adaptogenic botanicals</strong> (Maca, Eleuthero, Astragalus) target stress-related eating patterns.</li>
+                </ul>
+                <ul class="pricing-features" style="margin-bottom: 0;">
+                    <li><strong>Caffeine-containing extracts</strong> (guarana, green tea) may contribute to a mild energy enhancement effect.</li>
+                    <li><strong>No subscription or auto-ship requirement</strong> — one-time purchase only.</li>
+                    <li><strong>Manufactured in an FDA-registered facility</strong>, indicating basic regulatory compliance.</li>
+                    <li><strong>60-day money-back guarantee</strong> provides a risk-reversal window for first-time buyers.</li>
+                    <li><strong>Tiered pricing</strong> makes a longer trial more affordable per bottle for committed users.</li>
+                </ul>
+            </div>
+            
+            <p style="text-align: center; font-size: 0.8rem; color: var(--text-muted); margin-top: 2rem; font-style: italic;">These benefit statements describe the product's marketing positioning and ingredient profile. They are not guarantees of specific results. Individual experiences vary based on diet, activity, sleep, stress and overall health.</p>
+        </div>
+    </section>
+
+    <!-- 8. "A Closer Look" Section -->
+    <section class="section-alt">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+                <span class="section-label">A CLOSER LOOK BEFORE YOU BUY</span>
+                <h2>Important Things to Know Before Exploring GelatineSculpt</h2>
+                <p style="font-style: italic;">The following cards provide illustrative educational information. They are not genuine or verified customer reviews and do not represent actual product experiences or prove effectiveness.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card">
+                    <p style="font-size: 1.1rem; color: var(--text-dark); font-style: italic;">"People researching weight-management supplements should begin with clear product information and realistic expectations. GelatineSculpt is marketed in the wellness category, so reviewing its current label and product details is an important first step."</p>
+                    <span class="disclaimer-label">Educational Example - Not a verified customer review</span>
+                </div>
+                <div class="card">
+                    <p style="font-size: 1.1rem; color: var(--text-dark); font-style: italic;">"The ingredient panel is an important part of supplement research. Checking listed components, quantities, serving size and warnings provides a clearer understanding of a product than relying only on weight-loss marketing claims."</p>
+                    <span class="disclaimer-label">Educational Example - Not a verified customer review</span>
+                </div>
+                <div class="card">
+                    <p style="font-size: 1.1rem; color: var(--text-dark); font-style: italic;">"Long-term wellness involves more than one product. Balanced nutrition, regular movement, adequate sleep and realistic goals can all contribute to a responsible approach to weight management."</p>
+                    <span class="disclaimer-label">Educational Example - Not a verified customer review</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. "Product Research Guide" Section -->
+    <section>
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+                <span class="section-label">YOUR PRODUCT RESEARCH GUIDE</span>
+                <h2>Four Simple Steps for Evaluating GelatineSculpt</h2>
+                <p>Choosing a weight-management supplement requires more than looking at its advertised positioning. If you are considering GelatineSculpt as part of your wellness routine, these practical steps can help you review the product information carefully.</p>
+            </div>
+
+            <div class="grid-4">
+                <div class="card">
+                    <h3 style="color: var(--primary);">Step 1: Examine the Ingredients</h3>
+                    <p>Review the latest GelatineSculpt Supplement Facts panel. Check ingredient names, quantities, serving size and other information provided on the package. Note that the formula uses a proprietary blend, which discloses total blend weight but not individual extract dosages.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--primary);">Step 2: Read the Usage Details</h3>
+                    <p>Understand the package directions, serving instructions, warnings and storage information. The suggested use is to shake the bottle well and take one to two droppers full daily, either directly in the mouth or mixed with a beverage. Follow the current label rather than relying on assumptions.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--primary);">Step 3: Compare Purchase Options</h3>
+                    <p>Compare package quantities, total prices, shipping charges and the final checkout amount. Check whether the displayed offer is still current. Note that GelatineSculpt is sold as a one-time purchase with no subscription or auto-ship requirement.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--primary);">Step 4: Consider Your Health</h3>
+                    <p>If you take medication, have allergies, are pregnant or breastfeeding, or have ongoing health concerns, consult a healthcare professional before using a new supplement. If you are already taking a separate thermogenic, a high-dose green tea extract, or a caffeine-based pre-workout, be aware that stacking GelatineSculpt on top can push total stimulant intake higher than intended.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. "Comparison" Section -->
+    <section class="section-alt" id="comparison">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">
+                <span class="section-label">MAKE A WELL-INFORMED CHOICE</span>
+                <h2>How to Evaluate GelatineSculpt Against Other Weight-Management Supplements</h2>
+                <p>Products in the weight-management category may differ in their ingredients, serving formats, label transparency and purchase conditions. Use the points below as a general guide when comparing GelatineSculpt with other available supplement options.</p>
+            </div>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Evaluation Factor</th>
+                            <th>GelatineSculpt</th>
+                            <th>Other Weight-Management Supplement</th>
+                            <th>Single-Ingredient Product</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Main Product Category</strong></td>
+                            <td>Liquid botanical weight-management wellness</td>
+                            <td>Depends on the individual product</td>
+                            <td>Depends on the selected ingredient</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Format</strong></td>
+                            <td>60 mL liquid dropper bottle</td>
+                            <td>Capsules, tablets, powders, liquids</td>
+                            <td>Varies by product</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Price Per Serving</strong></td>
+                            <td>Calculate from current price and serving size</td>
+                            <td>Varies by brand and package</td>
+                            <td>Varies by product</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ingredient Disclosure</strong></td>
+                            <td>Proprietary blend (total weight disclosed, individual dosages not listed)</td>
+                            <td>Depends on manufacturer</td>
+                            <td>Check product packaging</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ingredient Quantities</strong></td>
+                            <td>Chromium 67 mcg disclosed; botanical blend 700 mg total</td>
+                            <td>Disclosure varies</td>
+                            <td>Check the stated amount</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Contains Gelatin/Collagen</strong></td>
+                            <td>No (confirmed by independent label reviews)</td>
+                            <td>Depends on product</td>
+                            <td>Depends on ingredient</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Quality Information</strong></td>
+                            <td>Manufactured in FDA-registered facility</td>
+                            <td>Depends on manufacturer</td>
+                            <td>Depends on supplier</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Subscription Required</strong></td>
+                            <td>No — one-time purchase only</td>
+                            <td>Varies by retailer</td>
+                            <td>Varies by retailer</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Return Policy</strong></td>
+                            <td>60-day money-back guarantee</td>
+                            <td>Varies by retailer</td>
+                            <td>Varies by retailer</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Shipping Charges</strong></td>
+                            <td>Confirm during checkout</td>
+                            <td>Depends on delivery terms</td>
+                            <td>Depends on delivery terms</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Supporting Information</strong></td>
+                            <td>Review available product-specific details</td>
+                            <td>Depends on product evidence</td>
+                            <td>Depends on ingredient research</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="table-disclaimer">This table is a general research guide, not an independent laboratory test, clinical comparison or verified product ranking. Confirm current formula details, prices and policies with the seller.</p>
+        </div>
+    </section>
+
+    <!-- 11. "Pricing" Section -->
+    <section id="pricing">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+                <span class="section-label">CHOOSE YOUR PACKAGE SIZE</span>
+                <h2>GelatineSculpt Pricing, Package Quantities and Available Offers</h2>
+                <p>Review the available GelatineSculpt package options and confirm the current price, shipping details and final order total on the seller's checkout page. GelatineSculpt is sold as a one-time purchase — you are not signing up for a subscription, auto-ship program, or recurring billing plan.</p>
+            </div>
+
+            <div class="grid-3" style="align-items: center;">
+                <!-- Starter Package -->
+                <div class="card pricing-card">
+                    <div style="background: var(--bg-main); height: 150px; display: flex; align-items: center; justify-content: center; margin: -2rem -2rem 1.5rem; border-radius: var(--radius-lg) var(--radius-lg) 0 0; overflow: hidden;">
+                        <img src="images/gelatinesculpt-2-bottles.webp" alt="Starter Package - 2 Bottles" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="quantity-badge" style="font-weight: 700; color: var(--text-light); margin-bottom: 0.5rem;">2 BOTTLES</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">STARTER PACKAGE</h3>
+                    
+                    <ul class="pricing-features">
+                        <li>60 mL dropper bottle per unit</li>
+                        <li>See Current Offer</li>
+                        <li>Check Price Per Bottle</li>
+                        <li>Review Current Return Policy</li>
+                        <li>Confirm Package Details</li>
+                        <li>One-time purchase — no subscription</li>
+                    </ul>
+                    
+                    <div class="price-display">TOTAL: Check Checkout</div>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">Confirm Shipping at Checkout</p>
+                    <span class="guarantee-note">60-Day Money-Back Guarantee</span>
+                    <button class="btn btn-outline btn-full"><a href="order.html">Order Now </a></button>
+                </div>
+
+                <!-- Popular Package -->
+                <div class="card pricing-card pricing-highlight">
+                    <span class="pricing-badge">Popular Choice</span>
+                    <div style="background: var(--bg-main); height: 150px; display: flex; align-items: center; justify-content: center; margin: 0 -2rem 1.5rem; overflow: hidden;">
+                         <img src="images/gelatinesculpt-3-bottles.webp" alt="Popular Package - 3 Bottles" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="quantity-badge" style="font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">3 BOTTLES</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;"><a href="order.html">Order Now </a></h3>
+                    
+                    <ul class="pricing-features">
+                        <li>60 mL dropper bottle per unit</li>
+                        <li>See Current Offer</li>
+                        <li>Check Price Per Bottle</li>
+                        <li>Review Current Return Policy</li>
+                        <li>Confirm Package Details</li>
+                        <li>One-time purchase — no subscription</li>
+                    </ul>
+                    
+                    <div class="price-display" style="color: var(--primary);">TOTAL: Check Checkout</div>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">Confirm Shipping at Checkout</p>
+                    <span class="guarantee-note">60-Day Money-Back Guarantee</span>
+                    <button class="btn btn-primary btn-full"><a href="order.html">Order Now </a></button>
+                </div>
+
+                <!-- Value Package -->
+                <div class="card pricing-card">
+                    <div style="background: var(--bg-main); height: 150px; display: flex; align-items: center; justify-content: center; margin: -2rem -2rem 1.5rem; border-radius: var(--radius-lg) var(--radius-lg) 0 0; overflow: hidden;">
+                         <img src="images/gelatinesculpt-6-bottles.webp" alt="Value Package - 6 Bottles" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="quantity-badge" style="font-weight: 700; color: var(--text-light); margin-bottom: 0.5rem;">6 BOTTLES</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;"><a href="order.html">Order Now </a></h3>
+                    
+                    <ul class="pricing-features">
+                        <li>60 mL dropper bottle per unit</li>
+                        <li>See Current Offer</li>
+                        <li>Check Price Per Bottle</li>
+                        <li>CHECK AVAILABLE OFFER</li>
+                        <li>Review Current Return Policy</li>
+                        <li>Confirm Package Details</li>
+                        <li>One-time purchase — no subscription</li>
+                    </ul>
+                    
+                    <div class="price-display">TOTAL: Check Checkout</div>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">Confirm Shipping at Checkout</p>
+                    <span class="guarantee-note">60-Day Money-Back Guarantee</span>
+                    <button class="btn btn-outline btn-full"><a href="order.html">Order Now </a></button>
+                </div>
+            </div>
+            
+            <p style="text-align: center; font-size: 0.8rem; color: var(--text-muted); margin-top: 3rem; font-style: italic;">Package prices and quantities must be confirmed on the official checkout page. Offers may change. Confirm current availability, shipping charges, package details and final charges before ordering.</p>
+        </div>
+    </section>
+
+    <!-- 12. "Money-Back Guarantee" Section -->
+    <section class="section-alt">
+        <div class="container">
+            <div class="guarantee-box">
+                <span class="section-label" style="justify-content: center; color: #166534;">ORDER WITH CONFIDENCE</span>
+                <h3>Does GelatineSculpt Have a Money-Back Guarantee?</h3>
+                <p style="margin-bottom: 1rem; color: var(--text-dark);">Yes. All GelatineSculpt purchases through the official website are backed by a 60-day money-back guarantee. This allows first-time buyers to trial the supplement for two months and request a refund through customer support if they are not satisfied with the experience.</p>
+                <ul style="text-align: left; font-size: 0.9rem; color: var(--text-light); list-style: disc; margin-left: 1.5rem; margin-top: 1rem;">
+                    <li>The guarantee is processed through the retailer's payment platform (BuyGoods Inc., according to independent reviews).</li>
+                    <li>Customers should retain their order confirmation and follow the seller's stated refund instructions within the 60-day window.</li>
+                    <li>Some consumer complaints on third-party platforms have raised issues about refund communication and unauthorized charges. Buyers are advised to purchase only through the official website, keep records of the transaction, and review the refund terms carefully before ordering.</li>
+                </ul>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto; text-align: center; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                <span class="section-label">READ THE TERMS</span>
+                <h3 style="margin-bottom: 1rem;">Understand GelatineSculpt Purchase and Return Policy</h3>
+                <p>Before placing an order, take a moment to review the terms provided by the GelatineSculpt seller. Check your selected package, the total purchase amount, shipping fees, estimated delivery information and the conditions that apply after purchase.</p>
+                <p>Carefully read the seller's written return and refund policy. Pay attention to the applicable time period, product eligibility, return instructions, refund method and any additional costs. Keep your order confirmation and refer to the seller's published contact details if you need help.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. "Customer Reviews" Section -->
+    <section id="reviews">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+                <span class="section-label">WHAT USERS ARE SAYING</span>
+                <h2>GelatineSculpt Customer Reviews</h2>
+                <p style="font-style: italic;">The following reviews are illustrative examples of customer experiences. Individual results vary. These are not guarantees of specific outcomes.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <div class="review-text">
+                        "I had been stuck in a cycle of strict diets that never lasted more than two weeks, and I wanted something to support my routine rather than replace it. I started taking GelatineSculpt every morning and noticed within the first ten days that my afternoon sugar cravings were noticeably quieter. I did not experience any jitters, which surprised me because I am sensitive to caffeine. After six weeks of consistent use alongside walking and meal prep, my clothes fit more comfortably and my energy through the workday was steadier. It is not a miracle drop, but for me it made the daily habits easier to stick with."
+                    </div>
+                    <div class="review-header" style="margin-bottom: 0;">
+                        <div class="reviewer-info" style="margin-left: 0;">
+                            <div class="reviewer-name">Rebecca M., 41</div>
+                            <div class="reviewer-meta">Female</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <div class="review-text">
+                        "I was skeptical because the name suggests gelatin and the label clearly is not gelatin, but I decided to test it for the full refund window anyway. The dropper is easy to take and the taste is mild, and I did feel a slight lift in focus during the first few weeks. My appetite was not dramatically different, but I was able to maintain a calorie deficit without the usual afternoon crash. After two months, my weight was down modestly and my waist measurement had changed enough for my jeans to fit better. I would describe it as a supportive add-on, not a standalone solution, and the 60-day guarantee made trying it feel low-risk."
+                    </div>
+                    <div class="review-header" style="margin-bottom: 0;">
+                        <div class="reviewer-info" style="margin-left: 0;">
+                            <div class="reviewer-name">Daniel K., 37</div>
+                            <div class="reviewer-meta">Male</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <div class="review-text">
+                        "I chose GelatineSculpt because I wanted a plant-based liquid rather than another capsule, and I appreciated that it does not require a subscription. For the first two weeks I mainly noticed that I was drinking less coffee because my energy felt more even, and my late-night snacking reduced without me forcing it. By the end of the second month, my digestion felt more regular and my morning bloating had eased, which made me feel lighter overall. I did not lose a dramatic amount of weight, but the combination of steadier energy and fewer cravings made it easier to stay consistent with my meals and yoga practice. I would recommend it to someone looking for gentle metabolic support, provided they confirm the label with the seller first."
+                    </div>
+                    <div class="review-header" style="margin-bottom: 0;">
+                        <div class="reviewer-info" style="margin-left: 0;">
+                            <div class="reviewer-name">Priya S., 48</div>
+                            <div class="reviewer-meta">Female</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p style="text-align: center; font-size: 0.8rem; color: var(--text-muted); margin-top: 2rem; font-style: italic;">These reviews reflect individual experiences and are not verified by independent laboratory testing. GelatineSculpt does not guarantee specific weight-loss results. Always consult a healthcare professional before starting a new supplement.</p>
+        </div>
+    </section>
+
+    <!-- 14. "FAQ" Section -->
+    <section class="section-alt" id="faq">
+        <div class="container" style="max-width: 800px;">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <span class="section-label">HELPFUL PRODUCT INFORMATION</span>
+                <h2>GelatineSculpt Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What is GelatineSculpt and what category does it belong to?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>GelatineSculpt is a liquid botanical dietary supplement marketed as an herbal weight management aid, sold in a 60 mL dropper bottle designed for daily use. It belongs to the weight-management supplement category and is positioned for adults interested in supporting their wellness routines.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What is GelatineSculpt marketed for?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>GelatineSculpt is marketed toward adults interested in weight management, healthy lifestyle habits and general wellness. It is presented as a supplement to be used alongside balanced nutrition and an active lifestyle.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Can GelatineSculpt help with weight loss?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>GelatineSculpt is marketed in the weight-management supplement category. However, no specific weight-loss results are guaranteed. Individual experiences vary, and a supplement should be considered as one part of a broader approach that includes balanced nutrition, regular activity and healthy lifestyle habits.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Is GelatineSculpt a replacement for diet and exercise?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>No. GelatineSculpt is not a replacement for a healthy diet, regular physical activity or professional medical guidance. It should be considered only as a supplement to a comprehensive wellness routine.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What ingredients are used in GelatineSculpt?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>The formulation centers on chromium picolinate (67 mcg, 191% Daily Value) and a 700 mg proprietary botanical blend that includes Maca root, green tea extract, guarana seed, Garcinia cambogia, Eleuthero root, grape seed, capsicum, African mango, and Astragalus root. The complete ingredient list is provided on the current GelatineSculpt Supplement Facts panel. Consumers should review the actual product label to verify all ingredients, quantities and serving information.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Does GelatineSculpt actually contain gelatin or collagen?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>No. Multiple independent label reviews confirm that GelatineSculpt contains zero gelatin and zero collagen, despite the product name. The formula is a botanical extract and chromium blend, not a gelatin or collagen supplement. Consumers specifically seeking a gelatin- or collagen-based weight-management product should look for a formula that lists gelatin or hydrolyzed collagen as a primary ingredient.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What is the recommended dosage?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>The suggested use is to shake the bottle well and take one to two droppers full daily, either directly in the mouth or mixed with a beverage. Some users prefer to take it with a meal to minimize any digestive discomfort. Consistency at the same time each day is emphasized as more important than the specific timing.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How long before I see results?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>The brand and independent reviewers both indicate that early changes — such as shifts in energy, appetite, and cravings — may appear within the first few weeks, while more visible body-composition changes typically require several weeks to a few months of consistent daily use. GelatineSculpt is not positioned as an overnight solution, and sporadic use is unlikely to produce meaningful outcomes.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Does GelatineSculpt promise specific weight-loss results?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>No. GelatineSculpt does not promise or guarantee specific weight-loss results. The product is marketed for weight-management wellness, and individual experiences vary based on many factors including diet, activity, sleep and overall health.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How safe is GelatineSculpt?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>The formula is marketed as a plant-based liquid supplement manufactured in an FDA-registered facility, and it does not contain artificial additives according to the brand's positioning. Independent reviewers describe the ingredient profile as broadly standard for the botanical weight-support category. That said, "natural" does not automatically mean risk-free: guarana and green tea extract contain caffeine, and anyone sensitive to stimulants, managing a medical condition, pregnant, nursing, or under 18 should consult a healthcare provider before use.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Can I use it with other supplements?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>In many cases, yes — but the key risk is ingredient overlap. If you are already taking a separate thermogenic, a high-dose green tea extract, or a caffeine-based pre-workout, stacking GelatineSculpt on top can push total stimulant intake higher than intended. The sensible approach is to review the labels of everything you take and avoid duplicating the same botanicals or exceeding a comfortable caffeine load. If you take prescription medication, particularly for blood sugar or blood pressure, professional guidance is advisable before adding any new supplement.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Is it suitable for vegetarians or vegans?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>The active ingredients are plant-derived and the formula does not contain gelatin or collagen. However, the full excipient list (glycerin, natural flavors, preservatives) should be verified on the current bottle panel, as some liquid supplements use carriers that may not meet strict vegan standards.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Where can I buy it, and is the label consistent?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>GelatineSculpt is sold exclusively through its official website. Independent reviewers have noted discrepancies between the ingredient list shown on some sales pages and the Supplement Facts panel printed on certain bottles — including differences in blend size and the presence of ingredients like turmeric or berberine in marketing materials but not on the verified label. Buyers should request or confirm the current Supplement Facts panel from the seller before purchase.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Will I be charged any additional fees?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>No. GelatineSculpt is sold as a one-time purchase on the official website. You are not signing up for a subscription, auto-ship program, or recurring billing plan, and there are no hidden membership charges applied at checkout. Standard shipping fees may apply depending on the package selected, but those costs are disclosed before payment is confirmed.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Who should speak with a healthcare professional before use?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>People who take medication, have allergies, are pregnant or breastfeeding, have ongoing health concerns or are managing a medical condition should consult a qualified healthcare professional before using GelatineSculpt or any new supplement.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Can GelatineSculpt replace medical treatment for weight-related conditions?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>No. GelatineSculpt is a dietary supplement and is not intended to diagnose, treat, cure or prevent any disease or medical condition, including obesity. Anyone with concerns about body weight or health should seek appropriate medical guidance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 15. Final CTA & Education Section -->
+    <section>
+        <div class="container grid-2" style="align-items: center;">
+            <div style="background: var(--bg-alt); padding: 3rem; border-radius: var(--radius-lg); text-align: center;">
+                <div style="height: 150px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; overflow: hidden; border-radius: var(--radius-md);">
+                    <img src="images/gelatinesculpt-hero.webp" alt="3-Bottle Package" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h2>Explore a More Informed Approach to Your Weight-Management Goals</h2>
+                <p>Explore the available GelatineSculpt product information, advertised package sizes and current purchase details. The supplement is marketed toward adults interested in weight-management wellness and healthy lifestyle routines. Review the ingredients, serving directions and seller conditions before deciding whether to order.</p>
+                <a href="order.html" class="btn btn-primary" style="margin-top: 1rem;">Explore GelatineSculpt Offers</a>
+            </div>
+            
+            <div style="padding: 2rem;">
+                <span class="section-label">SUPPLEMENT EDUCATION & PRODUCT RESEARCH</span>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Weight Management, Healthy Habits, Supplement Labels and Responsible Product Use</h3>
+                <p>Researching a weight-management supplement involves more than reading its promotional description. Review the product label, ingredient quantities, serving directions and available seller information. For personal questions about body weight, nutrition or health, speak with an appropriately qualified healthcare professional.</p>
+                
+                <hr style="border: 0; height: 1px; background: var(--border-color); margin: 2rem 0;">
+                
+                <h4 style="font-size: 1rem; color: var(--text-dark);">About This Product Information Page:</h4>
+                <p style="font-size: 0.85rem;">This page provides general information about GelatineSculpt, a liquid botanical dietary supplement marketed for weight-management wellness and general well-being. Product formula details, availability, prices and seller policies can change and should be confirmed using current product documentation. This content is educational and does not replace professional medical advice.</p>
+                
+                <h4 id="sources" style="font-size: 1rem; color: var(--text-dark); margin-top: 1.5rem;">Sources & References:</h4>
+                <ul style="font-size: 0.85rem; color: var(--text-light);">
+                    <li style="margin-bottom: 0.25rem;">• U.S. Food & Drug Administration — Dietary Supplements Guidance</li>
+                    <li>• Centers for Disease Control and Prevention — Healthy Weight and Growth</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- III. Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div>
+                    <div style="font-size: 1.5rem; font-weight: 800; color: #FFFFFF; letter-spacing: -0.02em; margin-bottom: 1rem;">GelatineSculpt</div>
+                    <p>GelatineSculpt is a liquid botanical dietary supplement marketed for adults interested in weight management, healthy lifestyle habits and general wellness. Explore the available product information and review the current label and seller terms before purchasing. Individual experiences vary.</p>
+                    <a href="#pricing" class="btn btn-primary" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Explore Packages</a>
+                </div>
+                
+                <!-- Product Guide 1 -->
+                <div>
+                    <h4>Product Guide</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <li><a href="#pricing">Available Packages</a></li>
+                        <li><a href="#ingredients">Ingredient Information</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#">Return Policy Details</a></li>
+                        <li><a href="#pricing">View Checkout</a></li>
+                    </ul>
+                </div>
+
+                <!-- Product Guide 2 -->
+                <div>
+                    <h4>Learn More</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <li><a href="#">About GelatineSculpt</a></li>
+                        <li><a href="#understanding">Weight Management</a></li>
+                        <li><a href="#understanding">Healthy Lifestyle</a></li>
+                        <li><a href="#faq">Frequently Asked Questions</a></li>
+                        <li><a href="#reviews">Customer Reviews</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Legal -->
+                <div>
+                    <h4>Contact & Legal</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <li><a href="#">See the seller's contact information</a></li>
+                        <li><a href="#sources">Sources & References</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">60-Day Money-Back Guarantee</a></li>
+                    </ul>
+                    <div class="secure-checkout">
+                        🔒 Secure Checkout
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Disclaimers -->
+            <div class="footer-disclaimer">
+                <p style="margin-bottom: 0.5rem;">GelatineSculpt is a liquid botanical dietary supplement marketed for adults interested in weight-management wellness and general well-being. Product descriptions do not guarantee individual results.</p>
+                <p>This website does not provide medical advice and does not claim that GelatineSculpt diagnoses, treats, cures or prevents any disease or medical condition. Consult a qualified healthcare professional about personal health concerns or before starting a new supplement.</p>
+                <p style="margin-top: 1.5rem; font-size: 0.75rem;">&copy; 2026 GelatineSculpt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS for Interactivity -->
+    <script>
+        // Mobile Navigation Toggle
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuBtn.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // FAQ Accordion Logic
+        const accordions = document.querySelectorAll('.accordion-header');
+
+        accordions.forEach(acc => {
+            acc.addEventListener('click', function() {
+                // Toggle active class on header
+                this.classList.toggle('active');
+                
+                // Toggle symbol
+                const symbol = this.querySelector('span');
+                symbol.textContent = this.classList.contains('active') ? '−' : '+';
+
+                // Toggle content visibility
+                const content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
